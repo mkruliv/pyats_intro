@@ -4,7 +4,7 @@ testbed:
 
 
 devices:
-  sbx-n9kv-ao:
+  sbx-ao:
     connections:
       cli:
         ip: sbx-nxos-mgmt.cisco.com
@@ -21,7 +21,7 @@ devices:
   csr1000v-1:
     connections:
       cli:
-        ip: ios-xe-mgmt-latest.cisco.com
+        ip: ios-xe-mgmt.cisco.com
         protocol: ssh
         port: 8181
     credentials:

@@ -33,15 +33,15 @@ def main():
 
 
     # Sandbox NXOS Device
-    # CLI: genie parse "show version" --testbed-file "devnet_sbx_testbed.yml" --devices "sbx-n9kv-ao"
+    # CLI: genie parse "show version" --testbed-file "devnet_sbx_testbed.yml" --devices "sbx-ao"
     # This CLI command outputs the results into a directory called "out1" which does not have to exist
-    # CLI & SAVE: genie parse "show version" --testbed-file "devnet_sbx_testbed.yml" --devices "sbx-n9kv-ao" --output PRE
+    # CLI & SAVE: genie parse "show version" --testbed-file "devnet_sbx_testbed.yml" --devices "sbx-ao" --output PRE
     # DIFF CLI:  genie diff PRE POST
-    device = testbed.devices['sbx-n9kv-ao']
+    device = testbed.devices['sbx-ao']
     # print(dir(device))
     device.connect()
     response = device.parse('show version')
-    print(f"\nResponse from sbx-n9kv-ao is of type {type(response)} and length {len(response)}")
+    print(f"\nResponse from sbx-ao is of type {type(response)} and length {len(response)}")
     print(response)
     print()
     print(json.dumps(response, indent=4))

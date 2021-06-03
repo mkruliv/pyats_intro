@@ -70,7 +70,7 @@ def main():
     # This CLI command outputs the results into a directory called "out1" which does not have to exist
     # CLI & SAVE: genie parse "show version" --testbed-file "devnet_sbx_testbed.yml" --devices "sbx-n9kv-ao" --output PRE
     # DIFF CLI:  genie diff PRE POST
-    device = testbed.devices['sbx-n9kv-ao']
+    device = testbed.devices['sbx-ao']
     # print(dir(device))
     # device.connect()
     # response = device.parse('show version')

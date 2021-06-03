@@ -67,7 +67,7 @@ def main():
     # Using the default parameters and therefore the default Testbed
     if testbed.name == 'DevNet_Always_On_Sandbox_Devices':
         # Sandbox NXOS Device
-        nx_dev, nx_resp = device_info('sbx-n9kv-ao', testbed, arguments.command, arguments.save)
+        nx_dev, nx_resp = device_info('sbx-ao', testbed, arguments.command, arguments.save)
 
         # csr1000v-1
         csr_dev, csr_resp = device_info('csr1000v-1', testbed, arguments.command, arguments.save)
